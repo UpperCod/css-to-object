@@ -1,0 +1,53 @@
+{
+    "name": "pkg_name",
+    "version": "0.0.0",
+    "description": "Capture text fragments based on regular expressions that are executed for each line of the text",
+    "main": "./cjs/index.js",
+    "module": "./esm/index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "ava",
+        "prepare": "npm run build && npm test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/UpperCod/pkg_name.git"
+    },
+    "author": "UpperCod",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/UpperCod/pkg_name/issues"
+    },
+    "homepage": "https://github.com/UpperCod/pkg_name#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^8.1.0",
+        "ava": "^3.10.1",
+        "builtin-modules": "^3.1.0",
+        "esm": "^3.2.25",
+        "rollup": "^2.21.0"
+    },
+    "typings": "types.d.ts",
+    "ava": {
+        "require": [
+            "esm"
+        ],
+        "files": [
+            "test/**/*.test.js"
+        ]
+    },
+    "exports": {
+        "./": {
+            "import": "./ems/",
+            "require": "./cjs/"
+        }
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": false
+    }
+}
