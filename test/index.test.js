@@ -1,6 +1,23 @@
 import test from "ava";
-import { example } from "../src";
+import { compile } from "../src/compile";
 
-test("simple replace", async (t) => {
-    t.is(example("a"), "a");
+test("Simple", async (t) => {
+    t.deepEqual(compile(`a{width:200px}`), [
+        {
+            selector: "a",
+            content: "width:200px",
+            start: 0,
+            end: 14,
+            children: [],
+        },
+    ]);
+    t.deepEqual(compile(`a{width:200px}`), [
+        {
+            selector: "a",
+            content: "width:200px",
+            start: 0,
+            end: 14,
+            children: [],
+        },
+    ]);
 });

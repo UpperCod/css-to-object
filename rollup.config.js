@@ -3,7 +3,7 @@ import builtins from "builtin-modules";
 import pkg from "./package.json";
 
 export default {
-    input: ["./src/index.js"],
+    input: ["./src/compile.js", "./src/stringify.js"],
     output: [
         {
             dir: "cjs",
