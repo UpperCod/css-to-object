@@ -1,9 +1,44 @@
-# pkg_name
+# css-to-json
 
-bla bla....
+css-to-json is a package that transforms the syntax from css to JSON format using regular expressions
 
-## install
+The result is an object that shows properties, selectors and nests, example:
 
+## input css
+
+```css
+.a {
+    width: 200px;
+    .b {
+        font-size: 100px;
+        &:hover {
+            background: teal;
+        }
+    }
+}
+
+@media (max-width: 200px) {
+    .b {
+        font-size: 100px;
+    }
+}
 ```
-npm install pkg_name
+
+## output css
+
+```json
+{
+    ":host": {
+        ".a ": {
+            "width": "200px",
+            ".b ": {
+                "font-size": "100px",
+                "&:hover ": { "background": "teal" }
+            }
+        },
+        "@media (max-width: 200px) ": { ".b ": { "font-size": "100px" } }
+    }
+}
 ```
+
+> **Note** that the output is encapsulated in a `:host` selector.

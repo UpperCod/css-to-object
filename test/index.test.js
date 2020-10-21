@@ -1,6 +1,13 @@
 import test from "ava";
-import { example } from "../src";
+import { join } from "path";
+import { readFile } from "fs/promises";
+import { cssToJson } from "../css-to-object";
+const load = (file) => readFile(join(__dirname, `./css/${file}.css`), "utf8");
 
-test("simple replace", async (t) => {
-    t.is(example("a"), "a");
-});
+["basic", "nexted", "normalize"].forEach(async (file) =>
+    test(file, async (t) => {
+        const cssJson = await load("basic");
+        const { default: expect } = await import("./expect/basic");
+        t.deepEqual(cssToJson(cssJson), expect);
+    })
+);

@@ -1,9 +1,10 @@
 {
-    "name": "pkg_name",
-    "version": "0.0.0",
-    "description": "Capture text fragments based on regular expressions that are executed for each line of the text",
-    "main": "./cjs/index.js",
-    "module": "./esm/index.js",
+    "name": "@uppercod/css-to-object",
+    "version": "1.0.0",
+    "description": "css-to-json is a package that transforms the syntax from css to JSON format using regular expressions",
+    "main": "./cjs/css-to-object.js",
+    "module": "./css-to-object.js",
+    "src": "./css-to-object.js",
     "publishConfig": {
         "access": "public"
     },
@@ -15,14 +16,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/UpperCod/pkg_name.git"
+        "url": "git+https://github.com/UpperCod/css-to-object.git"
     },
     "author": "UpperCod",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/UpperCod/pkg_name/issues"
+        "url": "https://github.com/UpperCod/css-to-object/issues"
     },
-    "homepage": "https://github.com/UpperCod/pkg_name#readme",
+    "homepage": "https://github.com/UpperCod/css-to-object#readme",
     "dependencies": {},
     "devDependencies": {
         "@rollup/plugin-node-resolve": "^8.1.0",
@@ -41,10 +42,8 @@
         ]
     },
     "exports": {
-        "./": {
-            "import": "./ems/",
-            "require": "./cjs/"
-        }
+        "import": "./css-to-object.js",
+        "require": "./cjs/css-to-object.js"
     },
     "prettier": {
         "tabWidth": 4,

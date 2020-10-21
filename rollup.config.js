@@ -3,16 +3,11 @@ import builtins from "builtin-modules";
 import pkg from "./package.json";
 
 export default {
-    input: ["./src/index.js"],
+    input: ["./css-to-object.js"],
     output: [
         {
             dir: "cjs",
             format: "cjs",
-            sourcemap: true,
-        },
-        {
-            dir: "esm",
-            format: "esm",
             sourcemap: true,
         },
     ],
