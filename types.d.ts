@@ -3,7 +3,7 @@ declare module "@uppercod/css-to-object" {
         [prop: string]: CSSObjectFill | string | number;
     }
 
-    export interface Host {
+    export interface Host extends CSSObjectFill {
         ":host": CSSObjectFill;
     }
     export function cssToObject(css: string): Host;
