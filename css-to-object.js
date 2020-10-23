@@ -2,7 +2,7 @@
  *
  * @param {string} css
  */
-export function cssToJson(css) {
+export function cssToObject(css) {
     css = replace(
         `:host{${css}}`,
         /**
@@ -32,7 +32,7 @@ export function cssToJson(css) {
          * @example
          * .selector{} >> ".selector":{}
          */
-        [/ *([^;{}]+){/g, `"$1":{`],
+        [/ *([^;{}]+) *{/g, `"$1":{`],
         /**
          * Capture the css blocks "{}", to transform the css props into json props
          * @example

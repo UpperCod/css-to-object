@@ -1,6 +1,6 @@
-# css-to-json
+# css-to-object
 
-css-to-json is a package that transforms the syntax from css to JSON format using regular expressions
+css-to-object is a package that transforms the syntax from css to JSON format using regular expressions
 
 The result is an object that shows properties, selectors and nests, example:
 

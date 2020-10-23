@@ -1,6 +1,6 @@
 {
     "name": "@uppercod/css-to-object",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "css-to-json is a package that transforms the syntax from css to JSON format using regular expressions",
     "main": "./cjs/css-to-object.js",
     "module": "./css-to-object.js",
