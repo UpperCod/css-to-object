@@ -6,5 +6,5 @@ declare module "@uppercod/css-to-object" {
     export interface Host extends CSSObjectFill {
         ":host": CSSObjectFill;
     }
-    export function cssToObject(css: string): Host;
+    export function cssToJson(css: string): Host;
 }

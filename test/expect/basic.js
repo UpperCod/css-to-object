@@ -2,7 +2,7 @@ export default {
     ":host": {
         ".button ": {
             width: "200px",
-            font: "italic small-caps bold 12px/30px Georgia, serif",
+            font: "italic small-caps bold 12px/30px Georgia, 'serif'",
             "box-shadow":
                 "0px 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.5)",
             background:
