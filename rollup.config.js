@@ -1,7 +1,5 @@
-import pkg from "./package.json";
-
 export default {
-    input: ["./css-to-object.js"],
+    input: ["./src/css-to-object.js"],
     output: [
         {
             file: "css-to-object.cjs",
