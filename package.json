@@ -9,7 +9,7 @@
         "import": "./src/css-to-object.js",
         "require": "./css-to-object.cjs"
     },
-    "typings": "types.d.ts",
+    "typings": "css-to-object.d.ts",
     "publishConfig": {
         "access": "public"
     },

@@ -6,8 +6,7 @@
       "checkJs": true
     },
     "include": [
-        "types.d.ts",
-        "css-to-object.js",
-        "test/**/*",
+        "css-to-object.d.ts",
+        "src/**/*"
     ]
 }
