@@ -2,7 +2,7 @@
  *
  * @param {string} css
  */
-export function cssToJson(css) {
+export function cssToObject(css) {
     css = replace(
         `:host{${css}}`,
         /**

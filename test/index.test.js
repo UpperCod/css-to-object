@@ -1,6 +1,6 @@
 import test from "ava";
 import { readFile } from "fs/promises";
-import { cssToJson } from "../src/css-to-object.js";
+import { cssToObject } from "../src/css-to-object.js";
 /**
  *
  * @param {string} file
@@ -12,6 +12,6 @@ const load = (file) =>
     test(type, async (t) => {
         const cssJson = await load(type);
         const { default: expect } = await import(`./expect/${type}.js`);
-        t.deepEqual(cssToJson(cssJson), expect);
+        t.deepEqual(cssToObject(cssJson), expect);
     })
 );
