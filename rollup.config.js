@@ -9,5 +9,4 @@ export default {
             sourcemap: true,
         },
     ],
-    plugins: [resolve()],
 };
