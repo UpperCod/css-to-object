@@ -4,7 +4,7 @@ export default {
         {
             file: "css-to-object.cjs",
             format: "cjs",
-            sourcemap: true,
+            sourcemap: false,
         },
     ],
 };

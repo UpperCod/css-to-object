@@ -1,6 +1,6 @@
 {
     "name": "@uppercod/css-to-object",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "css-to-json is a package that transforms the syntax from css to JSON format using regular expressions",
     "type": "module",
     "main": "./css-to-object.cjs",
@@ -29,7 +29,6 @@
         "url": "https://github.com/UpperCod/css-to-object/issues"
     },
     "homepage": "https://github.com/UpperCod/css-to-object#readme",
-    "dependencies": {},
     "devDependencies": {
         "ava": "^3.10.1",
         "rollup": "^2.21.0"
